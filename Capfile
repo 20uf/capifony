@@ -57,14 +57,3 @@ namespace :deploy do
     end
   end
 end
-
-namespace :deploy do
-  namespace :assets do
-    desc "Assets dump"
-    task :assetic, :only => { :primary => true } do
-      capifony_pretty_print "--> Assetic Dump"
-      invoke_command "sh -c 'cd #{latest_release} && #{php_bin} bin/console assetic:dump --env=#{symfony_env_prod}'"
-      capifony_puts_ok
-    end
-  end
-end

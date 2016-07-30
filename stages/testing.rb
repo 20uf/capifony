@@ -41,7 +41,7 @@ set :copy_vendors, false
 set :writable_dirs, ["var/cache", "var/logs"]
 set :webserver_user, "www-data"
 set :use_set_permissions, true
-set :dump_assetic_assets, false
+set :dump_assetic_assets, true
 set :model_manager, "doctrine" # ORM
 
 set :build_dir, "#{strategy.destinationrelease}"
@@ -49,4 +49,3 @@ set :build_dir, "#{strategy.destinationrelease}"
 on 'strategy:before:compression', 'deploy:assets:bower'
 after 'deploy', 'deploy:assets:bazinga'
 after 'deploy', 'deploy:assets:jsrouting'
-after 'deploy', 'deploy:assets:assetic'

@@ -2,8 +2,10 @@
 
 > Sample scripts capifony
 
-Installation
-------------
+
+Capistrano: A deployment automation tool built on Ruby, Rake, and SSH.
+
+## Installation
 
     gem install capifony
     
@@ -26,7 +28,6 @@ To deploy your application
 Find complete documentation on the official website
 * http://capifony.org/
 
-License
--------
+## License
 
-See [LICENSE](LICENSE) file.
+Copyright &copy; 2016 [Michael COULLERET aka 20uf](http://github.com/20uf). Licensed under the terms of the [MIT license](LICENSE.md).

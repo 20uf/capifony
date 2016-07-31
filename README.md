@@ -5,24 +5,33 @@
 
 Capistrano: A deployment automation tool built on Ruby, Rake, and SSH.
 
-## Installation
+## Requirements
+
+> capifony
 
     gem install capifony
+
+> capistrano-ext
     
     gem install capistrano-ext
+
+> capistrano-strategy-copy-with-triggers
+    
     gem install capistrano-strategy-copy-with-triggers
+
+## Usage
 
 Validating your Recipe
 
-   cap <stage> deploy:setup
+    cap <stage> deploy:setup
 
 There is a simple way to check the stage
 
-   cap <stage> deploy:check
+    cap <stage> deploy:check
 
 To deploy your application
 
-   cap <stage> deploy
+    cap <stage> deploy
 
 
 Find complete documentation on the official website

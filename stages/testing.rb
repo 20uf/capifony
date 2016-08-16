@@ -40,7 +40,7 @@ set :update_vendors, false
 set :copy_vendors, false
 set :writable_dirs, ["var/cache", "var/logs"]
 set :webserver_user, "www-data"
-set :use_set_permissions, true
+set :use_set_permissions, false
 set :dump_assetic_assets, true
 set :model_manager, "doctrine" # ORM
 

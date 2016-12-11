@@ -46,6 +46,8 @@ set :model_manager, "doctrine" # ORM
 
 set :build_dir, "#{strategy.destinationrelease}"
 
+after 'deploy', 'deploy:cleanup'
+
 on 'strategy:before:compression', 'deploy:assets:bower'
 after 'deploy', 'deploy:assets:bazinga'
 after 'deploy', 'deploy:assets:jsrouting'

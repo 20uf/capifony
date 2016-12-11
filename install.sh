@@ -6,3 +6,5 @@ sudo apt-get install ruby2.2 ruby2.2-dev
 
 gem install capifony
 gem install capistrano-ext
+
+gem install 'capistrano-strategy-copy-with-triggers'
